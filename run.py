@@ -39,3 +39,22 @@ while not int(chance) in range(1,6):
     except:
         print('Enter between 1 and 5')
 failed_attempts = 1
+
+
+
+
+#Created a While loop
+while failed_attempts<=chance:
+    #Print statement containing join()methods and a format()mentod
+    print('\nGuess to reveal the programming language: ',''.join(language_guessed))
+    print('Previous letters guessed: ', ','.join(characters_guessed))
+    guess = input("Failed attempt number: {}\nPlease enter the character or guess the language here:".format(failed_attempts))
+
+
+
+
+
+
+
+
+
