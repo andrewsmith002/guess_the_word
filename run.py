@@ -12,3 +12,11 @@ language = random.choice(guess_the_language_list)
 language_guessed = list('*'*len(language))
 #Defined 
 characters_guessed=[]
+
+
+#This function reveals the '*' with each guessed character.
+def reveal(guess):
+    revealing_indices=[index for index,value in enumerate(language) if value==guess]
+    global language_guessed
+    for i in revealing_indices:
+            language_guessed[i]=guess
