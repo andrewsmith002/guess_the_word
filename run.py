@@ -20,3 +20,8 @@ def reveal(guess):
     global language_guessed
     for i in revealing_indices:
             language_guessed[i]=guess
+
+
+#Welcome message printed to the screen.
+print('Welcome to guess the programming language\n')
+print('The programming language is: {}\n'.format(''.join(language_guessed)))
