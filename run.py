@@ -25,3 +25,17 @@ def reveal(guess):
 #Welcome message printed to the screen.
 print('Welcome to guess the programming language\n')
 print('The programming language is: {}\n'.format(''.join(language_guessed)))
+
+
+#A print statement informing the user of the maximum failed attempts they have.
+print("You have a maximum of 5 failed attempts to guess what programming language is behind the above asterisks")
+
+
+#Created a While Not loop and a print statement  requesting the user to enter how many failed attempts they want between 1-5.
+chance = 0
+while not int(chance) in range(1,6):
+    try:
+        chance = int(input("How difficult do you want to make the game?\nChoose the number of attempts you think you need to guess the hidden programming language [1-5]"))
+    except:
+        print('Enter between 1 and 5')
+failed_attempts = 1
