@@ -70,3 +70,8 @@ while failed_attempts<=chance:
         print('Correct, the letter "{}" is in this programming language'.format(guess))
         reveal(guess)
 
+
+    #Else statement created and will execute if the above IF statement is incorrect.
+    else:
+        print("Incorrect, please try again")
+        failed_attempts+=1
