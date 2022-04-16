@@ -48,7 +48,7 @@ while failed_attempts<=i:
     #Print statement containing join()methods and a format()mentod
     print('\nGuess to reveal the programming language: ',''.join(language_guessed))
     print('Previous letters guessed: ', ','.join(characters_guessed))
-    guess = input("Failed attempt number: {}\nPlease enter the character or guess the language here:".format(failed_attempts))
+    guess = input("Failed attempt number: {}\nPlease enter the character or guess the language here:\n".format(failed_attempts))
 
 
 
