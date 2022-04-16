@@ -44,7 +44,7 @@ The player cannot see what languages are contained in the list, however, the pla
 
 I manually tested this project by doing the following:
 
-<ul> Passed the code through a PEP8 linter and has minor issues</ul>
+<ul> Passed the code through a PEP8 linter and has minor issues relating to lines too long mostly</ul>
 <ul>Given invalid inputs where the user is asked to enter number of attempts</ul>
 <ul>Tested in my local terminal and the Code Institute Heroku terminal without any problems</ul>
 <br>
@@ -55,7 +55,7 @@ I manually tested this project by doing the following:
 ### Solved Bugs
 <br>
 
-<ul>When I wrote the project, I was getting index errors </ul>
+<ul>When I wrote the project, I was getting index errors, variables not definied and using quotations too many in one string</ul>
 
 ## Remaining Bugs
 <br>
