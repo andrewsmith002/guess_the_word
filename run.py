@@ -32,10 +32,10 @@ print("You have a maximum of 5 failed attempts to guess what programming languag
 
 
 #Created a While Not loop and a print statement  requesting the user to enter how many failed attempts they want between 1-5.
-chance = 0
-while not int(chance) in range(1,6):
+i = 0
+while not int(i) in range(1,6):
     try:
-        chance = int(input("How difficult do you want to make the game?\nChoose the number of attempts you think you need to guess the hidden programming language [1-5]"))
+        i = int(input("How difficult do you want to make the game?\nChoose the number of attempts you think you need to guess the hidden programming language [1-5]"))
     except:
         print('Enter between 1 and 5')
 failed_attempts = 1
@@ -44,7 +44,7 @@ failed_attempts = 1
 
 
 #Created a While loop
-while failed_attempts<=chance:
+while failed_attempts<=i:
     #Print statement containing join()methods and a format()mentod
     print('\nGuess to reveal the programming language: ',''.join(language_guessed))
     print('Previous letters guessed: ', ','.join(characters_guessed))
@@ -73,5 +73,11 @@ while failed_attempts<=chance:
 
     #Else statement created and will execute if the above IF statement is incorrect.
     else:
-        print("Incorrect, please try again")
+        print('Incorrect, please try again')
         failed_attempts+=1
+
+
+    #Created an IF statement that will display a print statement if the user inputs the correct programming language and an exit function.
+    if '*' not in language_guessed:
+        print('Congratulations, you have guessed the correct programming language, the language is: "{}"'.format(language))
+        exit(0)
