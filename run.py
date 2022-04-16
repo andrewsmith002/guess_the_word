@@ -52,9 +52,18 @@ while failed_attempts<=chance:
 
 
 
+    #Created an IF statement when the user inputs a character that was already inputed to display a message.
+    if guess in characters_guessed:
+        print("You already tried that letter, please choose another letter that you have not chosen\n")
+        continue
+    characters_guessed.append(guess)
 
 
-
-
+    #Created an IF statement when the user inputs the correct programming language a message with be displayed with the correct language.
+    if guess == language:
+        print('You guessed the correct language\nThe programming language is: "{}"'.format(language))
+        print("Congratulations!")
+        exit(0)
+        
 
 
