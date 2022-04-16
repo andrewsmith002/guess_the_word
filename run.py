@@ -65,5 +65,8 @@ while failed_attempts<=chance:
         print("Congratulations!")
         exit(0)
         
-
+    #Created an IF statement to display when the user inputs a correct character in the programming language and the reveal() function will display the correct character.
+    if guess in language and len(guess)!=0:
+        print('Correct, the letter "{}" is in this programming language'.format(guess))
+        reveal(guess)
 
